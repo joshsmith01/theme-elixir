@@ -90,7 +90,7 @@ gulp.task('browser-sync', ['build'], function() {
 
   browserSync.init(files, {
     // Proxy address
-    proxy: URL,
+    proxy: "http://site-elixir/"
 
     // Port #
     // port: PORT
