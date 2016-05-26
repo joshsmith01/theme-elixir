@@ -203,4 +203,18 @@ section.recent-projects {
 			color: #343b4b;;
 		}
 	}
+}
+
+// SECTION Work Together
+section.work-together {
+	background-color: #ff7979;
+	padding: rem-calc(52) 0;
+	h4 {
+		color: white;
+		font-family: 'Ubuntu', $header-font-family;
+		font-size: 1.313rem;
+		font-weight: 400;
+		line-height: 2.625rem;
+		text-transform: uppercase;
 	}
+}
