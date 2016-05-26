@@ -5,6 +5,9 @@
 .uppercase {
 	text-transform: uppercase;
 }
+.alert {
+	color: map_get($foundation-palette, alert);
+}
 .section-title {
 	font-size: 2.375rem;
 	line-height: 2.375rem;
@@ -167,7 +170,7 @@ section.product-demo {
 
 }
 
-// SECTION Recent Products
+// SECTION Recent Projects
 section.recent-projects {
 	padding-top: rem-calc(60);
 }
@@ -176,16 +179,17 @@ section.recent-projects {
 	padding-top: rem-calc(80);
 	.recent-cta {
 		color: white;
-		font-family: 'Vollkorn', $header-font-family;
 		h4 {
 			font-size: 3rem;
 			font-weight: 400;
 			line-height: 3.75rem;
+			font-family: 'Vollkorn', $header-font-family;
 		}
 		p {
 			font-size: 1.125rem;
 			font-weight: 300;
 			line-height: 2.125rem;
+			font-family: 'Ubuntu', $header-font-family;
 		}
 		.button {
 			font-family: 'Ubuntu', $header-font-family;
@@ -214,7 +218,41 @@ section.work-together {
 		font-family: 'Ubuntu', $header-font-family;
 		font-size: 1.313rem;
 		font-weight: 400;
-		line-height: 2.625rem;
+		line-height: 1.313rem;
 		text-transform: uppercase;
+		margin: 0;
+	}
+}
+
+// SECTION How We Work
+// TODO: Add the triangle CSS piece that points from the text to the image. -JMS
+section.how-we-work {
+	padding: rem-calc(62) 0 rem-calc(62);
+	.meet {
+		background-color: #f6f8f9;
+		@include breakpoint(medium down) {
+			text-align: center;
+		}
+	}
+	.meet-text {
+		padding: rem-calc(31) rem-calc(21) rem-calc(31) rem-calc(28) !important;
+		//padding-right: 20px !important;
+		h4 {
+			color: $medium-gray;
+			font-family: 'Vollkorn', $body-font-family;
+			font-size: 1.438rem;
+			font-weight: 400;
+		}
+		p {
+			color: $light-gray;
+			font-family: 'Ubuntu', $body-font-family;
+			font-size: 0.875rem;
+			font-weight: 300;
+			line-height: 1.5rem;
+		}
+	}
+	.meet-image {
+		//padding: 0;
+
 	}
 }

@@ -49,5 +49,6 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/part-product-demo' ); ?>
 <?php get_template_part( 'template-parts/recent-projects' ); ?>
 <?php get_template_part( 'template-parts/work-together' ); ?>
+<?php get_template_part( 'template-parts/how-we-work' ); ?>
 
 <?php get_footer();
