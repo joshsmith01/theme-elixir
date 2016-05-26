@@ -47,8 +47,10 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/part-performance' ); ?>
 <?php get_template_part( 'template-parts/part-product-demo' ); ?>
-<?php get_template_part( 'template-parts/recent-projects' ); ?>
-<?php get_template_part( 'template-parts/work-together' ); ?>
-<?php get_template_part( 'template-parts/how-we-work' ); ?>
+<?php get_template_part( 'template-parts/part-recent-projects' ); ?>
+<?php get_template_part( 'template-parts/part-work-together' ); ?>
+<?php get_template_part( 'template-parts/part-how-we-work' ); ?>
+<?php get_template_part( 'template-parts/part-testimonials' ); ?>
+
 
 <?php get_footer();
