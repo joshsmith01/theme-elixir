@@ -28,27 +28,36 @@
 .top-bar {
 
   .menu .home a {
-    font-size: 1rem;
-    color: #B9B9B9;
+    width: 5.875rem;
+    height: 1.375rem;
+    color: $white;
+    font-family: 'Ubuntu', $header-font-family;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    text-transform: uppercase;
   }
 
   .menu a {
-    height: 45px;
-    line-height: 45px;
-    color: #e6e6e6;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
-    line-height: 1;
-
+    height: 0.625rem;
+    font-family: 'Ubuntu', $body-font-family;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    color: $white;
+    &:hover {
+      color: #58eeff;
+      transition: color 0.25s ease-out, color 0.25s ease-out;
+    }
     &:hover:not(.button) {
-      background-color: #2a2a2a;
+      background-color: none;
     }
   }
 
   .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  // Remove the link borders from the top bar navigation. -JMS
+  //.menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
 
   .dropdown.menu .submenu {
     background-color: #121212;
