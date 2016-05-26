@@ -1,211 +1,75 @@
-// Page header
-#front-hero {
-	.marketing {
-		@include grid-row();
-		max-width: 55rem;
+// Utility classes
+.main-blue {
+	color: $main-blue;
+}
+
+// HEADER - Front page
+
+header#front-hero {
+	//width: 120rem;
+	height: 40rem;
+	opacity: 0.8;
+	background-color: black;
+	background-image: linear-gradient(242deg, #307c95 0%, #3b2b6a 100%);
+}
+.header-content {
+	//background: red;
+}
+.tagline {
+	//background: blue;
+	text-align: center;
+	.title-content {
+		margin-top: 11rem;
 	}
-
-	@include breakpoint(small) {
-		background: url('../images/demo/hero-bg-foundation-6-small.svg') bottom center;
-		background-size: cover;
-		background-position: bottom;
-		padding: rem-calc(65%) 0;
-		margin: 0 0 rem-calc(32);
-		height: auto;
-		position: relative;
-		text-align: left;
-	}
-
-	@include breakpoint(medium) {
-		background: url('../images/demo/hero-bg-foundation-6-large.svg') bottom center;
-		background-size: cover;
-		background-position: center;
-		height: rem-calc(685);
-		margin: 0 0 rem-calc(72);
-	}
-
-	#watch {
-
-		@include breakpoint(small) {
-			@include grid-column(7);
-			@include grid-column-position(-5);
-		}
-
-		@include breakpoint(medium) {
-			@include grid-column(12);
-			@include grid-column-position(0);
-		}
-
-		section {
-			display: inline;
-		}
-
-		a {
-			color: #B4C9D1;
-			cursor: pointer;
-			font-weight: 400;
-			margin-right: rem-calc(20);
-		}
-
-		a:hover {
-			color: #fff;
-		}
-
-		#stargazers {
-			:before {
-				content: "\f09b";
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-decoration: inherit;
-				color: #B4C9D1;
-				margin-right: rem-calc(8);
-			}
-		}
-
-		#twitter {
-			:before {
-				content: "\f099";
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-decoration: inherit;
-				color: #B4C9D1;
-				margin-right: rem-calc(8);
-			}
-		}
-
-	}
-
-	.tagline {
-
-		@include breakpoint(small) {
-			@include grid-column(8);
-		}
-
-		@include breakpoint(medium) {
-			@include grid-column(5);
-			padding-top: 6rem;
-		}
-
-	}
-
-	h1 {
-		color: #fff;
-		font-weight: 500;
-
-		@include breakpoint(small) {
-			font-size: 2.2rem;
-		}
-
-		@include breakpoint(medium) {
-			font-size: 2.875rem;
-		}
-
-	}
-
-	h4 {
-		color: #fefefe;
+	.title-content-hanger {
+		opacity: 0.7;
+		color: $white;
+		font-family: 'Merriweather', $body-font-family;
+		font-size: 1rem;
 		font-weight: 300;
-		font-size: 1.3125rem;
+		line-height: 5rem;
+		letter-spacing: 2px;
+		position: relative;
+		bottom: -60px;
 	}
-
-	.download { margin-top: rem-calc(20); }
-
-}
-
-// Intro
-.intro {
-	@include grid-row();
-
-	.fp-intro {
-
-		@include breakpoint(small) {
-			@include grid-column(12);
-		}
-
-		@include breakpoint(medium) {
-			@include grid-column(10);
-			@include grid-column-offset(1);
-
-			h2 {
-				font-weight: 300;
-				margin-bottom: 1.5rem;
-			}
-
-			h4 {
-				font-size: 1.125rem;
-				line-height: 1.6;
-				color: #777;
-				margin-bottom: 2rem;
-			}
-
+	h1 {
+		color: #58eeff;
+		font-family: 'Ubuntu', $body-font-family;;
+		font-size: 4.5rem;
+		font-weight: 700;
+		margin: 0;
+		text-transform: uppercase;
+	}
+	h4 {
+		color: $white;
+		font-family: 'Signika', $body-font-family;;
+		font-size: 1rem;
+		font-weight: 300;
+		margin: 0;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+	}
+	.button {
+		margin: 0;
+		margin-top: 2rem;
+		border: 2px solid $white;
+		color: $white;
+		&:hover {
+			color: #BADAEF;
+			border-color: #BADAEF;
 		}
 	}
 }
-
-// Section divider
-.section-divider {
-	@include grid-row();
-
-	hr {
-		@include grid-column(12);
-		@extend .dotted;
-		box-sizing: border-box;
-	}
+.impact-header {
+	color: $white;
 }
 
-
-// Benefits
-.benefits {
-	@include grid-row();
+// SECTION Performance
+.performance {
+	padding: rem-calc(60) 0 rem-calc(62);
 	text-align: center;
 
-	header {
-		@include grid-column(12);
-
-		h2 {
-			font-weight: 300;
-		}
-
-		h4 {
-			font-size: 1.125rem;
-			line-height: 1.6;
-			color: #777;
-		}
-	}
-
-	.semantic,
-	.responsive,
-	.customizable,
-	.professional {
-		@include breakpoint(small) {
-			@include grid-column(12);
-		}
-
-		@include breakpoint(medium) {
-			@include grid-column(3);
-		}
-
-		img {
-			padding: 1.25rem;
-    	margin: 1rem auto 0 auto;
-		}
-
-		h3 {
-			color: #0a0a0a;
-			font-weight: 300;
-			font-size: 1.75rem;
-		}
-
-		p { font-size: 0.9375rem; }
-
-	}
-
-	.why-foundation {
-		@include grid-row();
-		@include grid-column(12);
-		margin-top: 4rem;
+	h3 {
 	}
 
 }
