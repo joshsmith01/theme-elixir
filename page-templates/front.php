@@ -45,8 +45,8 @@ get_header(); ?>
 </header>
 
 
-<?php get_template_part('template-parts/part-performance'); ?>
-
+<?php get_template_part( 'template-parts/part-performance' ); ?>
+<?php get_template_part( 'template-parts/part-product-demo' ); ?>
 
 
 
