@@ -5,6 +5,8 @@ Template Name: Front
 get_header(); ?>
 
 <header id="front-hero" role="banner">
+	<div class="row">
+		<div class="small-12 columns small-centered">
 	<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 		<div class="top-bar-left">
 			<ul class="menu">
@@ -20,13 +22,15 @@ get_header(); ?>
 			<?php endif; ?>
 		</div>
 	</nav>
+		</div>
+	</div>
 	<div class="row header-content tagline">
 		<div class="small-12 columns small-centered title-content">
 			<h1><?php bloginfo( 'name' ); ?></h1>
 			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
 			<hr class="small-12 medium-2">
 		</div>
-		<div class="small-8 columns small-centered stinger">
+		<div class="small-11 columns small-centered stinger">
 			<h3 class="impact-header">There Is No Limit To What You Can Accomplish
 				Using “Elixir Product”</h3>
 		</div>
