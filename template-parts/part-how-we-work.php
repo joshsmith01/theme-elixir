@@ -11,7 +11,7 @@
 <section class="how-we-work">
 	<div class="row">
 		<div class="small-12 columns text-center">
-			<h3 class="section-title">How We <span class="alert" >Work</span>Better</h3>
+			<h3 class="section-title">How We <span class="alert" >Work </span>Better</h3>
 		</div>
 	</div>
 	<div class="row">
