@@ -21,6 +21,10 @@
 @import 'font-awesome';
 @import 'motion-ui';
 
+// Pixeden Fonts
+@import "../fonts/pe-icon-7-stroke/scss/pe-icon-7-stroke";
+@import "../fonts/pe-icon-7-stroke/scss/helper";
+
 // Foundation global styles
 @include foundation-global-styles;
 
