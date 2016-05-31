@@ -17,6 +17,12 @@
 	font-family: 'Vollkorn', $header-font-family;
 }
 
+.fullWidth {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: initial;
+}
 
 // HEADER - Front page
 
@@ -282,3 +288,57 @@ section.testimonials {
 		color: $light-gray;
 	}
 }
+
+// SECTION Suggestions
+section.suggestions {
+	opacity: 0.75;
+	background-color: #343b4b;
+	padding: rem-calc(60) 0 rem-calc(89);
+	h4 {
+		color: $white;
+		font-family: 'Vollkorn', $header-font-family;
+		font-size: 2.375rem;
+		font-weight: 400;
+	}
+	p {
+		color: #b5bbc9;
+		font-family: 'Ubuntu', $body-font-family;
+		font-size: 1.125rem;
+		font-weight: 300;
+		line-height: 2rem;
+	}
+}
+
+// SECTION Wide Grid
+.wide-grid {
+	i {
+		color: $main-blue;
+		font-size: 3rem;
+		line-height: 2.625rem;
+	}
+	.wide-grid-box {
+		padding: rem-calc(38) 0 rem-calc(58);
+	}
+	.wide-grid-box:nth-child(odd) {
+		background-color: #eff2f3;
+	}
+	.wide-grid-box:nth-child(even) {
+		background-color: #f4f6f7;
+	}
+	h4 {
+		color: $medium-gray;
+		font-family: 'Vollkorn', $body-font-family;
+		font-size: 1.75rem;
+		font-weight: 400;
+		line-height: 2.625rem;
+	}
+	p {
+		color: $light-gray;
+		font-family: 'Ubuntu', $body-font-family;
+		font-size: 1.125rem;
+		font-weight: 300;
+		line-height: 2.125rem;
+	}
+}
+
+// SECTION Footer

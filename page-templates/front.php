@@ -51,6 +51,7 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/part-work-together' ); ?>
 <?php get_template_part( 'template-parts/part-how-we-work' ); ?>
 <?php get_template_part( 'template-parts/part-testimonials' ); ?>
-
+<?php get_template_part( 'template-parts/part-suggestions' ); ?>
+<?php get_template_part( 'template-parts/part-wide-grid' ); ?>
 
 <?php get_footer();
