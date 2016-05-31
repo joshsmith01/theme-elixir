@@ -16,7 +16,7 @@
 			<div class="small-12 medium-4 columns ">
 				<div class="row">
 					<div class="small-12 columns performance-icon">
-						<i class="fa fa-cog" aria-hidden="true"></i>
+						<i class="pe-7s-config" aria-hidden="true"></i>
 						</div>
 					<div class="small-12 columns performance-text">
 						<h5>Many Options</h5>
@@ -29,7 +29,7 @@
 			<div class="small-12 medium-4 columns">
 				<div class="row">
 					<div class="small-12 columns performance-icon">
-						<i class="fa fa-home" aria-hidden="true"></i>
+						<i class="pe-7s-home" aria-hidden="true"></i>
 					</div>
 					<div class="small-12 columns performance-text">
 						<h5>Unlimited Interfaces</h5>
@@ -42,7 +42,7 @@
 			<div class="small-12 medium-4 columns">
 				<div class="row">
 					<div class="small-12 columns performance-icon">
-						<i class="fa fa-question-circle" aria-hidden="true"></i>
+						<i class="pe-7s-help1" aria-hidden="true"></i>
 					</div>
 					<div class="small-12 columns performance-text">
 						<h5>Full Documentation</h5>
