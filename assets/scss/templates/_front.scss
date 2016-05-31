@@ -315,6 +315,17 @@ section.suggestions {
 		color: $main-blue;
 		font-size: 3rem;
 		line-height: 2.625rem;
+		&:before {
+			width: 4.688rem;
+			height: 4.688rem;
+			background-color: white;
+			border-radius: 1.563rem;
+			padding: 25%;
+			@include breakpoint(medium down) {
+				display: none;
+			}
+
+		}
 	}
 	.wide-grid-box {
 		padding: rem-calc(38) 0 rem-calc(58);
@@ -342,3 +353,46 @@ section.suggestions {
 }
 
 // SECTION Footer
+#footer-container {
+	//height: 14.063rem;
+	background-color: #282e3b;
+	margin-top: 0;
+	#footer .widget h6 {
+		color: $white;
+		font-family: 'Vollkorn', $body-font-family;
+		font-size: 1.438rem;
+		font-weight: 400;
+		line-height: 1.438rem;
+	}
+	#footer .footer-site-colophon h6 {
+		color: #424a5d;
+		font-family: Signika;
+		font-size: 0.563rem;
+		font-weight: 300;
+
+		text-transform: uppercase;
+	}
+	#footer .footer-site-colophon h5 {
+		color: #5d667d;
+		font-family: 'Ubuntu', $body-font-family;
+		font-size: 2.625rem;
+		font-weight: 700;
+		line-height: 0.75rem;
+		text-transform: uppercase;
+	}
+	#footer .footer-site-colophon p {
+		color: #424a5d;
+		font-family: 'Signika', $body-font-family;
+		font-size: 0.563rem;
+		font-weight: 300;
+
+		text-transform: uppercase;
+	}
+	#footer .textwidget {
+		color: #9099b0;
+		font-family: 'Lato', $body-font-family;
+		font-size: 0.875rem;
+		font-weight: 300;
+		line-height: 1.438rem;
+	}
+}
