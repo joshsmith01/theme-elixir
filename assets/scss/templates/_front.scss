@@ -243,6 +243,13 @@ section.how-we-work {
 	.meet-text {
 		padding: rem-calc(31) rem-calc(21) rem-calc(31) rem-calc(28) !important;
 		//padding-right: 20px !important;
+		&:before {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 31px 31px 0;
+			border-color: transparent #f6f8f9 transparent transparent;
+		}
 		h4 {
 			color: $medium-gray;
 			font-family: 'Vollkorn', $body-font-family;
@@ -261,6 +268,15 @@ section.how-we-work {
 		//padding: 0;
 
 	}
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+
+	border-right: 10px solid blue;
 }
 
 // SECTION Testimonials
@@ -313,14 +329,14 @@ section.suggestions {
 .wide-grid {
 	i {
 		color: $main-blue;
-		font-size: 3rem;
+		font-size: 2.5rem;
 		line-height: 2.625rem;
 		&:before {
 			width: 4.688rem;
 			height: 4.688rem;
 			background-color: white;
 			border-radius: 1.563rem;
-			padding: 25%;
+			padding: 15%;
 			@include breakpoint(medium down) {
 				display: none;
 			}
@@ -366,7 +382,7 @@ section.suggestions {
 	}
 	#footer .footer-site-colophon h6 {
 		color: #424a5d;
-		font-family: Signika;
+		font-family: 'Signika', $body-font-family;
 		font-size: 0.563rem;
 		font-weight: 300;
 

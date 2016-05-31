@@ -27,6 +27,7 @@ var PATHS = {
     'assets/components/foundation-sites/scss',
     'assets/components/motion-ui/src',
     'assets/components/fontawesome/scss',
+    'assets/fonts/pe-icon-7-stroke/scss',
   ],
   javascript: [
     'assets/components/what-input/what-input.js',
