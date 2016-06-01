@@ -4,6 +4,9 @@ Template Name: Full Width
 */
 get_header(); ?>
 
+<?php get_template_part( 'template-parts/part-main-navigation' ); ?>
+
+
 <?php get_template_part( 'template-parts/featured-image' ); ?>
 
 <div id="page-full-width" role="main">

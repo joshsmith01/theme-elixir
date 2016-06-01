@@ -1,12 +1,97 @@
-#page-full-width {
-  @include grid-row();
-  margin-top: 3rem;
+//#page-full-width {
+//  @include grid-row();
+//  //margin-top: 3rem;
+//
+//  .main-content {
+//    @include breakpoint(small) {
+//      @include grid-column(12);
+//    }
+//
+//  }
+//
+//}
 
-  .main-content {
-    @include breakpoint(small) {
-      @include grid-column(12);
-    }
 
+.about-us-header {
+  .button {
+    padding-left: rem-calc(57);
+    padding-right: rem-calc(57);
+    color: white;
+    font-family: 'Vollkorn', $body-font-family;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.25rem;
   }
+}
+.about-us {
+  height: 35.75rem;
+  background-color: #17212a;
+}
+.page-hook-title {
+  font-family: 'Vollkorn', $header-font-family;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 5.313rem;
+  color: $white;
+  text-align: center;
+  //@include vertical-center;
+  padding-top: 15%;
+}
 
+// SECTION Quick-view
+
+.quick-view {
+  padding: rem-calc(57) 0 rem-calc(60);
+  h4 {
+    color: $main-blue;
+    font-family: 'Vollkorn', $body-font-family;
+    font-size: 1.75rem;
+    font-weight: 400;
+  }
+  .sub-h4 {
+    text-shadow: 0.044rem 0.044rem 0.063rem transparent;
+    color: $light-gray;
+    font-family: 'Ubuntu', $body-font-family;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.938rem;
+  }
+  p {
+    text-shadow: 0.044rem 0.044rem 0.063rem transparent;
+    color: $light-gray;
+    font-family: 'Ubuntu', $body-font-family;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 2.125rem;
+  }
+  .quick-view-sliders {
+    label {
+      color: $light-gray;
+      font-family: 'Ubuntu', $body-font-family;
+      font-size: 0.938rem;
+      font-weight: 300;
+    }
+  }
+  .slider-handle {
+    width: 3rem;
+    height: 1rem;
+    input {
+      border: none;
+      height: 1rem;
+      padding: 0;
+      margin: 0;
+      box-shadow: none;
+      background-color: rgba(1,1,1, 0);
+      color: $white;
+    }
+  }
+  .slider {
+    background-color: #e5e9ee;
+    height: 1rem;
+    margin-bottom: 1.15rem;
+  }
+  .slider-fill {
+    background-color: $main-blue;
+    height: 1rem;
+  }
 }
