@@ -10,7 +10,10 @@
 //  }
 //
 //}
-
+.menu .active > a {
+  color: #fefefe;
+  background: none;
+}
 
 .about-us-header {
   .button {
@@ -26,6 +29,7 @@
 .about-us {
   height: 35.75rem;
   background-color: #17212a;
+  padding-bottom: rem-calc(125);
 }
 .page-hook-title {
   font-family: 'Vollkorn', $header-font-family;
@@ -42,6 +46,7 @@
 
 .quick-view {
   padding: rem-calc(57) 0 rem-calc(60);
+  background-color: #f6f8f9;
   h4 {
     color: $main-blue;
     font-family: 'Vollkorn', $body-font-family;
@@ -95,3 +100,190 @@
     height: 1rem;
   }
 }
+
+// SECTION Our Team
+section.our-team {
+  background-color: #f6f8f9;
+  padding: rem-calc(0) 0 rem-calc(52);
+  .section-intro {
+    background-color: $white;
+    padding: rem-calc(52) 0 rem-calc(59);
+    h3 {
+      color: #65d3e3;
+      font-family: 'Vollkorn', $header-font-family;
+      font-size: 2.375rem;
+      font-weight: 400;
+      line-height: 1.75rem;
+    }
+    p {
+      color: #8c9dac;
+      font-family: 'Ubuntu', $body-font-family;
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 2.125rem;
+    }
+  }
+  .meet-the-team {
+    padding-top: rem-calc(33);
+    h4 {
+      color: #8c9dac;
+      font-family: 'Vollkorn', $header-font-family;
+      font-size: 1.438rem;
+      font-weight: 400;
+      line-height: 2rem;
+    }
+    p {
+      color: #8c9dac;
+      font-family: 'Ubuntu', $body-font-family;
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 2rem;
+    }
+  }
+  .teammate {
+    box-shadow: 0 0.125rem 0 #ebeef0;
+  }
+  .teammate-contact {
+    background-color: $white;
+    font-family: 'Lato', $body-font-family;
+    h5 {
+      color: #3d4c51;
+      font-size: 1.438rem;
+      font-weight: 300;
+      line-height: 3rem;
+      margin-bottom: 0;
+    }
+    p {
+      color: #7d8c92;
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 0.875rem;
+      margin-bottom: 0;
+    }
+  }
+  .social-icon-container {
+    padding: rem-calc(20) 0;
+  }
+  .teammate-social {
+    width: 2rem;
+    color: #c9d5da;
+    font-family: FontAwesome;
+    font-size: 1rem;
+    font-weight: 400;
+    background: #eff3f4;
+    line-height: 2rem;
+  }
+}
+
+
+
+// SECTION Service Card
+.our-services {
+  padding-top: rem-calc(49);
+}
+.service-card {
+  background: $white;
+  padding: rem-calc(40) 0 rem-calc(42);
+  margin-bottom: map_get($grid-column-gutter, small);
+  color: #65d3e3;
+  i {
+    font-size: 6rem;
+    text-transform: uppercase;
+    transition: 2s font-size;
+  }
+  h4 {
+    font-family: 'Vollkorn', $header-font-family;
+    font-size: 1.438rem;
+    font-weight: 400;
+    margin-top: rem-calc(38);
+  }
+}
+.grid-box-bg {
+  background-color: #f6f8f9;
+  padding: rem-calc(50) 0;
+}
+.our-services-cta {
+  padding: rem-calc(50) 0;
+  p {
+    color: #8c9dac;
+    font-family: 'Ubuntu', $body-font-family;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.125rem;
+    margin-bottom: rem-calc(26);
+  }
+  .button {
+    color: white;
+    font-family: 'Signika', $body-font-family;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.125rem;
+    padding: rem-calc(28) rem-calc(96);
+    margin-bottom: 0;
+  }
+}
+.our-services-intro {
+  h3 {
+    color: #65d3e3;
+    font-family: 'Vollkorn', $header-font-family;
+    font-size: 2.375rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+  }
+  p {
+    color: #8c9dac;
+    font-family: 'Ubuntu', $body-font-family;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 2.125rem;
+  }
+}
+
+// SECTION Subfooter
+section.subfooter {
+  background-color: #f6f8f9;
+  padding: rem-calc(29) 0 rem-calc(45);
+
+  .icon-background {
+    padding-left: 0;
+    i {
+      color: #525c65;
+      font-size: 1.5rem;
+      background-color: #ebeef0;
+      border-radius: 1.25rem;
+      padding: .8rem;
+    }
+  }
+  h4 {
+    color: #525c65;
+    font-family: Vollkorn;
+    font-size: 1.438rem;
+    font-weight: 400;
+    line-height: 1.438rem;
+  }
+  .fa-li {
+    &:before {
+      font-weight: 400;
+      font-size: 0.575rem;
+      color: $light-gray;
+      margin-top: 3px;
+    }
+  }
+  a {
+    color: $light-gray;
+    font-size: 0.875rem;
+    line-height: 2rem;
+    font-family: Ubuntu;
+    font-weight: 300;
+  }
+}
+
+
+
+
+
+
+
+
+
+
