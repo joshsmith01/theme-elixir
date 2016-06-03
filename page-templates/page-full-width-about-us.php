@@ -20,9 +20,11 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
-	<?php get_template_part('template-parts/part-quick-view'); ?>
-    
-    
+
+	<?php get_template_part( 'template-parts/part-quick-view' ); ?>
+	<?php get_template_part( 'template-parts/part-our-team' ); ?>
+	<?php get_template_part( 'template-parts/part-our-services' ); ?>
+	<?php get_template_part( 'template-parts/part-subfooter' ); ?>
     
     
     
